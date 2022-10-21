@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CustomButtonsOne extends StatefulWidget {
-  const CustomButtonsOne({Key? key, required this.msg}) : super(key: key);
+class CustomButtonOne extends StatefulWidget {
+  const CustomButtonOne({Key? key, required this.msg}) : super(key: key);
   final String msg;
   @override
-  State<CustomButtonsOne> createState() => _CustomButtonsOneState();
+  State<CustomButtonOne> createState() => _CustomButtonOneState();
 }
 
-class _CustomButtonsOneState extends State<CustomButtonsOne> {
+class _CustomButtonOneState extends State<CustomButtonOne> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 55,
-      width: 150,
+      height: 50,
+      width: 140,
       child: ElevatedButton(
         onPressed: () {
           debugPrint('${widget.msg} BUTTON PRESSED');
@@ -31,7 +31,8 @@ class _CustomButtonsOneState extends State<CustomButtonsOne> {
           style: GoogleFonts.openSans(
             color: const Color(0xFF0E85FF),
             fontWeight: FontWeight.w600,
-            fontSize: 22,
+            fontSize: 20,
+            letterSpacing: 1,
           ),
         ),
       ),

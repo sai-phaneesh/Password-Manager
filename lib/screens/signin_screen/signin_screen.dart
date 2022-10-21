@@ -48,7 +48,7 @@ class _SignInState extends State<SignIn> {
           const SizedBox(
             height: 40,
           ),
-          CustomButtonsOne(msg: 'SIGN IN'),
+          const CustomButtonOne(msg: 'SIGN IN'),
           const SizedBox(
             height: 50,
           ),
