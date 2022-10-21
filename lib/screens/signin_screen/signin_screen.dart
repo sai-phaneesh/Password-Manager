@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_practice/custom_widgets/custom_buttons.dart';
 
 import '../../custom_widgets/custom_text_fields.dart';
 
@@ -47,31 +48,7 @@ class _SignInState extends State<SignIn> {
           const SizedBox(
             height: 40,
           ),
-          SizedBox(
-            height: 55,
-            width: 150,
-            child: ElevatedButton(
-              onPressed: () {
-                debugPrint('SIGN IN BUTTON PRESSED');
-              },
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.white),
-                shape: MaterialStateProperty.all<OutlinedBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(6),
-                  ),
-                ),
-              ),
-              child: Text(
-                'SIGN IN',
-                style: GoogleFonts.openSans(
-                  color: const Color(0xFF0E85FF),
-                  fontWeight: FontWeight.w600,
-                  fontSize: 22,
-                ),
-              ),
-            ),
-          ),
+          CustomButtonsOne(msg: 'SIGN IN'),
           const SizedBox(
             height: 50,
           ),
