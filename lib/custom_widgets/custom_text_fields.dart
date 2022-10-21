@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_practice/utilities/validators.dart';
 
 class CustomTextFieldOne extends StatefulWidget {
   const CustomTextFieldOne(
@@ -24,6 +25,11 @@ class _CustomTextFieldOneState extends State<CustomTextFieldOne> {
   Widget build(BuildContext context) {
     return Container(
       child: TextFormField(
+        validator: (value) {
+          return widget.maxLength == 10
+              ? validateMobileNumber(value)
+              : validateMpin(value);
+        },
         maxLength: widget.maxLength,
         keyboardType: TextInputType.number,
         textInputAction: widget.textInputAction,

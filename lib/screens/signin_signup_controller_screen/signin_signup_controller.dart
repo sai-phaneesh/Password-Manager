@@ -18,7 +18,16 @@ class _SignInSignUpControllerState extends State<SignInSignUpController> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    body = [SignIn(), SignUp()];
+    body = [
+      SignIn(forgotPassword: callBack),
+      const SignUp(),
+    ];
+  }
+
+  callBack() {
+    setState(() {
+      signInsignUpController = 1;
+    });
   }
 
   @override
