@@ -47,6 +47,7 @@ class _CustomTextFieldOneState extends State<CustomTextFieldOne> {
           ),
           suffixIcon: widget.suffixIcon
               ? IconButton(
+                  splashRadius: 25,
                   onPressed: () {
                     setState(() {
                       iconController = !iconController;
