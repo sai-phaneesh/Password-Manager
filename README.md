@@ -1,4 +1,4 @@
-# ui_practice
+# Password Manager
 
 A new Flutter project.
 
